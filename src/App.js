@@ -1,7 +1,7 @@
 import React from 'react';
-import logo from './logo.svg';
 import { Navbar,NavbarBrand} from 'reactstrap';
-import './App.css';
+import Menu from './components/MenuComponent';
+
 
 function App() {
   return (
@@ -11,21 +11,23 @@ function App() {
             <NavbarBrand href = "/">Restorante Con Fusion</NavbarBrand>
           </div>
        </Navbar>
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+       <Menu />
     </div>
+      // <header className="App-header">
+      //   <img src={logo} className="App-logo" alt="logo" />
+      //   <p>
+      //     Edit <code>src/App.js</code> and save to reload.
+      //   </p>
+      //   <a
+      //     className="App-link"
+      //     href="https://reactjs.org"
+      //     target="_blank"
+      //     rel="noopener noreferrer"
+      //   >
+      //     Learn React
+      //   </a>
+      // </header>
+
   );
 }
 
